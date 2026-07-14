@@ -68,7 +68,7 @@ body {
 .hero-foot { position: absolute; bottom: 22px; left: 6vw; right: 6vw; display: flex; justify-content: space-between; color: #aebcd0; font: 10px 'DM Mono'; letter-spacing: .08em; }
 
 .section { padding: 115px 6vw; }
-.intro { background: var(--white); color: var(--navy); }
+.intro { background: /*change*/#f5cdae; color: var(--navy); }
 .intro .eyebrow, .registration .eyebrow { color: #b25021; }
 .intro-content { display: grid; grid-template-columns: 1fr .85fr; gap: 12vw; }
 .intro h2 { font-size: clamp(47px, 6vw, 89px); }
@@ -98,7 +98,7 @@ body {
 .category-card p { color: var(--muted); line-height: 1.4; margin: 0; }
 .category-card i { position: absolute; right: 19px; bottom: 12px; color: var(--orange); font-style: normal; font-size: 32px; }
 
-.registration { background: var(--white); color: var(--navy); display: grid; grid-template-columns: 1fr .75fr; gap: 12vw; }
+.registration { background: /*changes*/#f5cdae; color: var(--navy); display: grid; grid-template-columns: 1fr .75fr; gap: 12vw; }
 .registration h2 { font-size: clamp(48px, 5.6vw, 86px); }
 .registration-copy > p:not(.eyebrow) { color: #435166; line-height: 1.5; max-width: 410px; }
 form { border: 1px solid #c0c9d5; padding: 30px; align-self: start; }
