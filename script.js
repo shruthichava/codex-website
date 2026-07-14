@@ -38,45 +38,38 @@ const scriptURL = "https://script.google.com/macros/s/AKfycbxpYrc_9OHJoj3zKn2dLV
 
 document
     .getElementById("registration-form")
-    .addEventListener("submit", e => {
+    .addEventListener("submit", function (e) {
 
         e.preventDefault();
 
 
+        const form = e.target;
+
+
         const data = {
-
-            name: document.getElementById("name").value,
-
-            email: document.getElementById("email").value,
-
-            grade: document.getElementById("grade").value,
-
-            parent_name: document.getElementById("parent_name").value,
-
-            parent_email: document.getElementById("parent_email").value,
-
-            parent_phone: document.getElementById("parent_phone").value
-
+            name: form.name.value,
+            email: form.email.value,
+            parent_name: form.parent_name.value,
+            parent_email: form.parent_email.value,
+            parent_phone: form.parent_phone.value
         };
 
 
         fetch(scriptURL, {
-
             method: "POST",
-
             body: JSON.stringify(data)
-
         })
+            .then(response => response.json())
+            .then(result => {
 
-            .then(() => {
+                console.log(result);
 
                 window.location.href = "thank-you.html";
 
             })
-
             .catch(error => {
 
-                console.error(error);
+                console.error("Error:", error);
 
                 alert("Registration failed");
 
