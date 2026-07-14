@@ -1,0 +1,124 @@
+/* ===========================
+   THANK YOU PAGE
+=========================== */
+
+body {
+    background: var(--navy);
+    color: var(--white);
+    min-height: 100vh;
+}
+
+.nav {
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.thank-you {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 24px;
+    background:
+        radial-gradient(circle at top right, rgba(244,123,53,.08), transparent 40%),
+        linear-gradient(135deg, #102846 0%, #08172b 100%);
+}
+
+.thank-you-content {
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+}
+
+.thank-you h2 {
+    margin: 0;
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: .85;
+}
+
+.thank-you h2 em {
+    color: var(--orange);
+    font-style: normal;
+}
+
+.thank-you p {
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.status-card {
+    margin: 50px auto;
+    max-width: 560px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid var(--line);
+    padding: 32px;
+    text-align: left;
+    backdrop-filter: blur(12px);
+}
+
+.status-card .eyebrow {
+    margin-bottom: 22px;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.status-row:last-child {
+    border-bottom: none;
+}
+
+.status-row span:last-child {
+    color: var(--orange-light);
+    font-weight: 700;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.button-group .button {
+    min-width: 220px;
+    justify-content: center;
+}
+
+footer {
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+@media (max-width: 768px) {
+
+    .thank-you {
+        padding: 80px 24px;
+    }
+
+    .status-card {
+        padding: 24px;
+    }
+
+    .status-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group .button,
+    .button-group .text-button {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+}
