@@ -110,28 +110,85 @@
       </section>
 
       <section id="registration" class="registration section">
-        <div class="registration-copy reveal">
-          <p class="eyebrow">03 / REGISTRATION</p>
-          <h2>YOUR NEXT<br>IDEA STARTS<br><em>HERE.</em></h2>
-          <p>Ready to be part of Blueprint? Add your application details, dates, requirements, or links here.</p>
-        </div>
-        <form class="reveal" onsubmit="event.preventDefault(); this.innerHTML='<div class=success><b>THANKS FOR YOUR INTEREST.</b><p>Your Blueprint registration form can connect here.</p></div>'">
-          <label>YOUR NAME<input required placeholder="Name"></label>
-          <label>EMAIL ADDRESS<input type="email" required placeholder="name@email.com"></label>
-          <label>
-            I AM A
-            <select required>
-              <option value="" disabled selected>Select one</option>
-              <option>Student</option>
-              <option>Parent / guardian</option>
-              <option>Educator</option>
-              <option>Community partner</option>
-            </select>
-          </label>
-          <button class="button orange" type="submit">Register interest <b>→</b></button>
-          <small>This is a placeholder sign-up form.</small>
-        </form>
-      </section>
+  <div class="registration-copy reveal">
+    <p class="eyebrow">03 / REGISTRATION</p>
+    <h2>YOUR NEXT<br>IDEA STARTS<br><em>HERE.</em></h2>
+    <p>
+      Ready to be part of Blueprint? Register below to secure your spot at
+      Blueprint.
+    </p>
+  </div>
+
+  <form
+    class="reveal"
+    action="https://formspree.io/f/xbdnlkyb"
+    method="POST"
+  >
+    <label>
+      STUDENT NAME
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+      >
+    </label>
+
+    <label>
+      STUDENT EMAIL ADDRESS
+      <input
+        type="email"
+        name="email"
+        placeholder="name@email.com"
+        required
+      >
+    </label>
+
+
+    <label>
+      PARENT NAME
+      <input
+        type="text"
+        name="parent_name"
+        placeholder="Parent/Guardian Name"
+        required
+      >
+    </label>
+
+    <label>
+      PARENT EMAIL ADDRESS
+      <input
+        type="email"
+        name="parent_email"
+        placeholder="parent@email.com"
+        required
+      >
+    </label>
+
+    <label>
+      PARENT PHONE NUMBER
+      <input
+        type="tel"
+        name="parent_phone"
+        placeholder="Parent/Guardian Phone Number"
+        required
+      >
+    </label>
+    
+    <input
+        type="hidden"
+        name="_next"
+        value="https://yourdomain.com/thank-you.html">  <!-- Redirect after submission -->
+
+    <button class="button orange" type="submit">
+      Register Interest <b>→</b>
+    </button>
+
+    <small>
+      We'll contact you with event updates and registration information.
+    </small>
+  </form>
+</section>
 
       <section id="faq" class="faq section">
         <div class="section-heading reveal"><p class="eyebrow">04 / FAQ</p><h2>GOOD<br><em>QUESTIONS.</em></h2></div>
