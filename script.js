@@ -35,16 +35,18 @@ document
             method: "POST",
             body: JSON.stringify(data)
         })
-            .then(response => response.json())
+            .then(response => response.text())
             .then(result => {
 
-                console.log(result);
+                console.log("Google response:", result);
+
                 window.location.href = "thank-you.html";
 
             })
             .catch(error => {
 
                 console.error("Error:", error);
+
                 alert("Registration failed");
 
             });
