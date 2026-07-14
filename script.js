@@ -11,28 +11,6 @@ document.querySelectorAll('details').forEach(detail => detail.addEventListener('
 document.querySelector('.menu-button').addEventListener('click', () => { const nav = document.querySelector('.nav nav'); nav.classList.toggle('open'); });
 
 
-const form = document.getElementById("registration-form");
-
-form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const data = new FormData(form);
-
-    const response = await fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: {
-            "Accept": "application/json"
-        }
-    });
-
-    if (response.ok) {
-        window.location.href = "thank-you.html";
-    } else {
-        alert("Something went wrong. Please try again.");
-    }
-});
-
 const scriptURL = "https://script.google.com/macros/s/AKfycbxpYrc_9OHJoj3zKn2dLVeo2rNaK8RQnZBC1hOl7aiO_HYkIhjhmlc8c9hAwyPObO6CGw/exec";
 
 
@@ -42,9 +20,7 @@ document
 
         e.preventDefault();
 
-
         const form = e.target;
-
 
         const data = {
             name: form.name.value,
@@ -63,16 +39,15 @@ document
             .then(result => {
 
                 console.log(result);
-
                 window.location.href = "thank-you.html";
 
             })
             .catch(error => {
 
                 console.error("Error:", error);
-
                 alert("Registration failed");
 
             });
 
     });
+
