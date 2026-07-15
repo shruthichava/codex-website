@@ -315,7 +315,9 @@ h2 em {
 }
 
 .intro {
-  background: var(--white);
+  background:
+    /*change*/
+    #f5cdae;
   color: var(--navy);
 }
 
@@ -522,7 +524,9 @@ h2 em {
 }
 
 .registration {
-  background: var(--white);
+  background:
+    /*changes*/
+    #f5cdae;
   color: var(--navy);
   display: grid;
   grid-template-columns: 1fr .75fr;
