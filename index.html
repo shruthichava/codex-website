@@ -12,14 +12,16 @@
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  < </head>
+</head>
 
 <body>
   <div class="cursor-dot"></div>
   <div class="cursor-ring"></div>
 
   <header class="nav">
-    <a class="logo" href="#top"><span class="logo-mark">B</span> BLUEPRINT</a>
+    <div class="header-logo">
+      <img src="unnamed.png" alt="logo">
+    </div>
     <button class="menu-button" aria-label="Open navigation">MENU</button>
     <nav>
       <a href="#events">Events</a>
@@ -43,11 +45,8 @@
           <a class="text-button" href="#events">Explore the program <span>↓</span></a>
         </div>
       </div>
-      <div class="hero-object" aria-hidden="true">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="cube"><span></span><span></span><span></span></div>
-        <p>DESIGN / BUILD / INNOVATE</p>
+      <div class="hero-logo">
+        <img src="unnamed.png" alt="logo">
       </div>
       <div class="hero-foot"><span>BLUEPRINT / 01</span><span>SCROLL TO DISCOVER ↓</span></div>
     </section>
@@ -80,7 +79,7 @@
             <p>Placeholder for your main event description. Add the date, location, length, and a clear reason to join.
             </p>
           </div>
-          <a href="#registration" aria-label="Register for Blueprint CADathon">↗</a>
+          <a href="#categories" aria-label="Register for Blueprint CADathon">↗</a>
         </article>
         <article class="event-card reveal">
           <div class="event-number">02</div>
@@ -110,22 +109,82 @@
         <h4>Design Beyond Limits</h4>
       </div>
       <div class="category-grid">
-        <article class="category-card reveal"><span>01</span>
-          <h3>AEROSPACE</h3>
-          <p>Rockets, Drones, Aircraft, Rovers</p><i>✦</i>
-        </article>
-        <article class="category-card reveal"><span>02</span>
-          <h3>ROBOTICS</h3>
-          <p>Arms, Humanoids, Automata, Mobile Robots</p><i>⌘</i>
-        </article>
-        <article class="category-card reveal"><span>03</span>
-          <h3>BIOTECHNOLOGY</h3>
-          <p>Prosthetics, Wearables, MedTech</p><i>⌁</i>
-        </article>
-        <article class="category-card reveal"><span>04</span>
-          <h3>ARCHITECTURE</h3>
-          <p>Bridges, Structures, Urban Buildings</p><i>↗</i>
-        </article>
+
+        <details class="category-card reveal">
+          <summary>
+            <span>01</span>
+            <h3>AEROSPACE</h3>
+            <i>✦</i>
+          </summary>
+          <div class="category-content">
+            <p>Example Projects</p>
+            <ul>
+              <li>Rockets</li>
+              <li>Drones</li>
+              <li>Aircraft</li>
+              <li>Satellites</li>
+              <li>Rovers</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <details class="category-card reveal">
+          <summary>
+            <span>02</span>
+            <h3>ROBOTICS</h3>
+            <i>⌘</i>
+          </summary>
+          <div class="category-content">
+            <p>Example Projects</p>
+            <ul>
+              <li>Robotic Arms</li>
+              <li>Humanoids</li>
+              <li>Mobile Robots</li>
+              <li>Automation Systems</li>
+              <li>Grippers</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <details class="category-card reveal">
+          <summary>
+            <span>03</span>
+            <h3>BIOTECHNOLOGY</h3>
+            <i>⌁</i>
+          </summary>
+          <div class="category-content">
+            <p>Example Projects</p>
+            <ul>
+              <li>Prosthetics</li>
+              <li>Wearables</li>
+              <li>Medical Devices</li>
+              <li>Health Sensors</li>
+              <li>Exoskeletons</li>
+            </ul>
+          </div>
+        </details>
+
+
+        <details class="category-card reveal">
+          <summary>
+            <span>04</span>
+            <h3>ARCHITECTURE</h3>
+            <i>↗</i>
+          </summary>
+          <div class="category-content">
+            <p>Example Projects</p>
+            <ul>
+              <li>Bridges</li>
+              <li>Skyscrapers</li>
+              <li>Sustainable Homes</li>
+              <li>Urban Designs</li>
+              <li>Smart Buildings</li>
+            </ul>
+          </div>
+        </details>
+
       </div>
     </section>
 
@@ -208,7 +267,11 @@
     </section>
   </main>
 
-  <footer><a class="logo" href="#top"><span class="logo-mark">B</span> BLUEPRINT</a>
+  <footer>
+    <div class="footer-logo">
+      <img src="unnamed.png" alt="logo">
+    </div>
+
     <p>MAKE WHAT’S NEXT.</p>
     <div><a href="#events">Events</a><a href="#categories">Categories</a><a
         href="mailto:hello@blueprint.org">Contact</a></div>
